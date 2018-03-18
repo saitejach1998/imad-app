@@ -7,6 +7,7 @@ button.onclick= function(){
     console.log("clicked");
     var request = new XMLHttpRequest();
     request.readystatechange = function(){
+        console.log(request.readyState);
         if(request.readyState === XMLHttpRequest.DONE){
             console.log(request.status);
             if(request.status === 200){
