@@ -8,8 +8,9 @@ button.onclick= function(){
     var request = new XMLHttpRequest();
     request.readystatechange = function(){
         if(request.readyState === XMLHttpRequest.DONE){
+            console.log(request.status);
             if(request.status === 200){
-                console.log(response.responseText)
+                
                 var counter = response.responseText;
                 var span = documnet.getElementById("count");
                 span.innerHTML = counter.toString();
