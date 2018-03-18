@@ -17,7 +17,7 @@ button.onclick= function(){
         
     };
     
-    request.open("GET","https://saitejach1998.imad.hasura-app.io/counter");
+    request.open("GET","http://saitejach1998.imad.hasura-app.io/counter");
     
     request.send(null);
     };
