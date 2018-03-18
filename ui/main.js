@@ -9,7 +9,7 @@ button.onclick= function(){
     request.readystatechange = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             if(request.status === 200){
-                var counter = response.Text;
+                var counter = response.responseText;
                 var span = documnet.getElementById("count");
                 span.innerHTML = counter.toString();
             }   
