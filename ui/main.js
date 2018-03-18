@@ -6,7 +6,7 @@ var button = document.getElementById("counter");
 button.onclick= function(){
    
     var request = new XMLHttpRequest();
-    request.readystatechange = function(){
+    request.onreadystatechange = function(){
         console.log(request.readyState);
         if(request.readyState === XMLHttpRequest.DONE){
             console.log(request.status);
