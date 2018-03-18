@@ -13,7 +13,7 @@ button.onclick= function(){
             if(request.status === 200){
                 
                 var counter = response.responseText;
-                var span = documnet.getElementById("count");
+                var span = document.getElementById("count");
                 span.innerHTML = counter.toString();
             }   
         }
